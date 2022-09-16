@@ -8,5 +8,8 @@ services:
       - '9002:9002'
     depends_on:
       - db
-    # volumes:
-    #   - backend_data:/usr/src/app/uploads
+    volumes:
+      - backend_data:/usr/src/app/uploads
+
+volumes:
+  backend_data:
