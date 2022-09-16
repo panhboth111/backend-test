@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '9002:9002'
+    depends_on:
+      - db
+    # volumes:
+    #   - backend_data:/usr/src/app/uploads
